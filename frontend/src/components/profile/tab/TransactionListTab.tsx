@@ -44,12 +44,12 @@ const TransactionListTab = ({ userData }: TransactionListTabProps) => {
     if (dNumber) {
       axios
         .get(
-          `https://k4d107.p.ssafy.io/haggle-credit/itemDelivery/send?idDeliveryNo=${dNumber}&idItemNo=${iNo}`
+          `http://www.mhk154.shop/haggle-credit/itemDelivery/send?idDeliveryNo=${dNumber}&idItemNo=${iNo}`
         )
         .then(() => {
           axios
             .get(
-              `https://k4d107.p.ssafy.io/haggle-credit/itemDelivery/selectSendAll?idSendUserNo=${userData.uNo}`
+              `http://www.mhk154.shop/haggle-credit/itemDelivery/selectSendAll?idSendUserNo=${userData.uNo}`
             )
             .then((res) => {
               setSellTransactionListTab(res.data);
@@ -63,12 +63,12 @@ const TransactionListTab = ({ userData }: TransactionListTabProps) => {
   const onReceive = (iNo: any) => {
     axios
       .get(
-        `https://k4d107.p.ssafy.io/haggle-credit/itemDelivery/receive?idItemNo=${iNo}`
+        `http://www.mhk154.shop/haggle-credit/itemDelivery/receive?idItemNo=${iNo}`
       )
       .then(() => {
         axios
           .get(
-            `https://k4d107.p.ssafy.io/haggle-credit/itemDelivery/selectReceiveAll?idReceiveUserNo=${userData.uNo}`
+            `http://www.mhk154.shop/haggle-credit/itemDelivery/selectReceiveAll?idReceiveUserNo=${userData.uNo}`
           )
           .then((res) => {
             setBuyTransactionListTab(res.data);
@@ -81,7 +81,7 @@ const TransactionListTab = ({ userData }: TransactionListTabProps) => {
   useEffect(() => {
     axios
       .get(
-        `https://k4d107.p.ssafy.io/haggle-credit/itemDelivery/selectSendAll?idSendUserNo=${userData.uNo}`
+        `http://www.mhk154.shop/haggle-credit/itemDelivery/selectSendAll?idSendUserNo=${userData.uNo}`
       )
       .then((res) => {
 
@@ -93,7 +93,7 @@ const TransactionListTab = ({ userData }: TransactionListTabProps) => {
 
     axios
       .get(
-        `https://k4d107.p.ssafy.io/haggle-credit/itemDelivery/selectReceiveAll?idReceiveUserNo=${userData.uNo}`
+        `http://www.mhk154.shop/haggle-credit/itemDelivery/selectReceiveAll?idReceiveUserNo=${userData.uNo}`
       )
       .then((res) => {
 

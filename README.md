@@ -142,7 +142,7 @@ spring.servlet.multipart.max-request-size=30MB
 
 
 # db
-spring.datasource.url=jdbc:mysql://k4d107.p.ssafy.io:3306/haggle_credit?serverTimezone=Asia%2FSeoul&useUniCode=yes&characterEncoding=UTF-8
+spring.datasource.url=jdbc:mysql://www.mhk154.shop:3306/haggle_credit?serverTimezone=Asia%2FSeoul&useUniCode=yes&characterEncoding=UTF-8
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.username=haggle_credit
 spring.datasource.password=egemerce

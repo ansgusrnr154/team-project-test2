@@ -97,7 +97,7 @@ const ItemTitle = styled.div`
 `;
 
 const ChatPage = ({match, location}: RouteComponentProps<MatchParams, HistoryParams, LocationParams>) => {
-  const serverURL = `https://k4d107.p.ssafy.io/haggle-credit/websocket`;
+  const serverURL = `http://www.mhk154.shop/haggle-credit/websocket`;
   const [value, setValue] = useState("");
   const [feeds, setFeeds] = useState<CHAT[]>([]);
   const [roomInfo, setRoomInfo] = useState<ROOMINFO[]>([]);

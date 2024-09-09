@@ -155,7 +155,7 @@ const ProductRegistration = () => {
 
     if (productPhoto.length > 0) {
       axios
-        .post('https://k4d107.p.ssafy.io/haggle-credit/itemSell/regist', body, {
+        .post('http://www.mhk154.shop/haggle-credit/itemSell/regist', body, {
           headers: {
             'Content-Type': 'application/json',
           },
@@ -186,7 +186,7 @@ const ProductRegistration = () => {
 
           axios
             .post(
-              'https://k4d107.p.ssafy.io/haggle-credit/image/itemPhotoUpload',
+              'http://www.mhk154.shop/haggle-credit/image/itemPhotoUpload',
               formd,
               {
                 headers: {

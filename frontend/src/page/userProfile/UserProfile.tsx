@@ -33,7 +33,7 @@ const UserProfile = ({ match }: RouteComponentProps<MatchParams>) => {
   useEffect(() => {
     axios
       .get(
-        `https://k4d107.p.ssafy.io/haggle-credit/user/myinfo?uNo=${match.params.id}`
+        `http://www.mhk154.shop/haggle-credit/user/myinfo?uNo=${match.params.id}`
       )
       .then((res) => {
         dispatch(userActions.joinUserData(res.data));

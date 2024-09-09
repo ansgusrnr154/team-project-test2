@@ -103,7 +103,7 @@ const BasketTab = ({ userData }: BasketTabProps) => {
   useEffect(() => {
     axios
       .get(
-        `https://k4d107.p.ssafy.io/haggle-credit/bookmark/read?type=sell&uNo=${userData.uNo}`
+        `http://www.mhk154.shop/haggle-credit/bookmark/read?type=sell&uNo=${userData.uNo}`
       )
       .then((res) => {
         setSellBookMarkList(res.data);
@@ -113,7 +113,7 @@ const BasketTab = ({ userData }: BasketTabProps) => {
       });
     axios
       .get(
-        `https://k4d107.p.ssafy.io/haggle-credit/bookmark/read?type=buy&uNo=${userData.uNo}`
+        `http://www.mhk154.shop/haggle-credit/bookmark/read?type=buy&uNo=${userData.uNo}`
       )
       .then((res) => {
 
@@ -126,12 +126,12 @@ const BasketTab = ({ userData }: BasketTabProps) => {
   const deleteBookMark = (item: any) => {
     axios
       .delete(
-        `https://k4d107.p.ssafy.io/haggle-credit/bookmark/delete?bItemNo=${item.b_item_no}&bUserNo=${item.b_user_no}`
+        `http://www.mhk154.shop/haggle-credit/bookmark/delete?bItemNo=${item.b_item_no}&bUserNo=${item.b_user_no}`
       )
       .then((res) => {
         axios
           .get(
-            `https://k4d107.p.ssafy.io/haggle-credit/bookmark/read?type=sell&uNo=${userData.uNo}`
+            `http://www.mhk154.shop/haggle-credit/bookmark/read?type=sell&uNo=${userData.uNo}`
           )
           .then((res) => {
             setSellBookMarkList(res.data);
@@ -141,7 +141,7 @@ const BasketTab = ({ userData }: BasketTabProps) => {
           });
         axios
           .get(
-            `https://k4d107.p.ssafy.io/haggle-credit/bookmark/read?type=buy&uNo=${userData.uNo}`
+            `http://www.mhk154.shop/haggle-credit/bookmark/read?type=buy&uNo=${userData.uNo}`
           )
           .then((res) => {
             setBuyBookMarkList(res.data);

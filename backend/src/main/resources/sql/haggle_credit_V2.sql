@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.23, for Win64 (x86_64)
 --
--- Host: k4d107.p.ssafy.io    Database: haggle_credit
+-- Host: www.mhk154.shop    Database: haggle_credit
 -- ------------------------------------------------------
 -- Server version	8.0.24
 

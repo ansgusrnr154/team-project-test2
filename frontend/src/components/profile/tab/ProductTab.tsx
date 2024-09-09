@@ -34,7 +34,7 @@ const ProductTab = ({ userData }: ProductTabProps) => {
   useEffect(() => {
     axios
       .get(
-        `https://k4d107.p.ssafy.io/haggle-credit/itemSell/myitem?uNo=${userData.uNo}`
+        `http://www.mhk154.shop/haggle-credit/itemSell/myitem?uNo=${userData.uNo}`
       )
       .then((res) => {
         setSellItemList(res.data);
@@ -44,7 +44,7 @@ const ProductTab = ({ userData }: ProductTabProps) => {
       });
     axios
       .get(
-        `https://k4d107.p.ssafy.io/haggle-credit/itemBuy/myitem?uNo=${userData.uNo}`
+        `http://www.mhk154.shop/haggle-credit/itemBuy/myitem?uNo=${userData.uNo}`
       )
       .then((res) => {
 

@@ -64,7 +64,7 @@ public class ImageUploadController {
 
 			/* 로컬에서 테스트시 아래 주석으로 코드 수정 바랍니다. */
 //			ipValue = "C:/" + iNo + "-" + file.getOriginalFilename();
-			ipValue = "https://k4d107.p.ssafy.io/upload-images/" + iNo + "-" + file.getOriginalFilename();
+			ipValue = "http://www.mhk154.shop/upload-images/" + iNo + "-" + file.getOriginalFilename();
 
 			ItemPhoto ip = new ItemPhoto();
 			ip.setIpItemNo(iNo);
@@ -107,7 +107,7 @@ public class ImageUploadController {
 
 		/* 로컬에서 테스트시 아래 주석으로 코드 수정 바랍니다. */
 //		uImage = "C:/" + userEmail + "-" + file.getOriginalFilename();
-		uImage = "https://k4d107.p.ssafy.io/upload-images/" + userEmail + "-" + file.getOriginalFilename();
+		uImage = "http://www.mhk154.shop/upload-images/" + userEmail + "-" + file.getOriginalFilename();
 
 		User user = new User();
 		user.setuImage(uImage);
@@ -127,7 +127,7 @@ public class ImageUploadController {
 				continue;
 			ItemPhoto ip = new ItemPhoto();
 			ip.setIpItemNo(i);
-			ip.setIpValue("https://k4d107.p.ssafy.io/upload-images/" + i + "item.jpg");
+			ip.setIpValue("http://www.mhk154.shop/upload-images/" + i + "item.jpg");
 			imageUploadService.uploadSSG(ip);
 		}
 		return new ResponseEntity<ItemPhoto>(HttpStatus.OK);

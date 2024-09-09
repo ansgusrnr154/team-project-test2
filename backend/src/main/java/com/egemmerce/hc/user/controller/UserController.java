@@ -75,7 +75,7 @@ public class UserController {
 	/* R :: 가입 중 아이디 중복 확인 */
 	@ApiOperation(value = "단순 아이디 중복확인을 위한 Restful API", response = User.class)
 	@GetMapping("/check/id")
-	public ResponseEntity<String> reviewCheckUEmail(String uEmail) throws Exception {
+	public ResponseEntity<String> reviewCheckUEmail(@RequestParam("uEmail") String uEmail) throws Exception {
 		User user = userService.checkUEmail(uEmail);
 		if (user == null) {
 			return new ResponseEntity<String>("사용 가능한 아이디 입니다.", HttpStatus.OK);

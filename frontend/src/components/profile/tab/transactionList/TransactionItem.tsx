@@ -208,7 +208,7 @@ const TransactionItem = ({
       const uaNo = item.item.itemBuy.ibDealAddress;
       axios
         .get(
-          `https://k4d107.p.ssafy.io/haggle-credit/user/address/selectano?uaNo=${uaNo}`
+          `http://www.mhk154.shop/haggle-credit/user/address/selectano?uaNo=${uaNo}`
         )
         .then((res) => {
           setDeleveryData(res.data);
@@ -217,7 +217,7 @@ const TransactionItem = ({
       const uaNo = item.item.itemSell.isDealAddress;
       axios
         .get(
-          `https://k4d107.p.ssafy.io/haggle-credit/user/address/selectano?uaNo=${uaNo}`
+          `http://www.mhk154.shop/haggle-credit/user/address/selectano?uaNo=${uaNo}`
         )
         .then((res) => {
           setDeleveryData(res.data);
@@ -263,7 +263,7 @@ const TransactionItem = ({
       if (value && inputreview) {
         axios
           .post(
-            'https://k4d107.p.ssafy.io/haggle-credit/review/writing',
+            'http://www.mhk154.shop/haggle-credit/review/writing',
             body,
             {
               headers: {
@@ -286,7 +286,7 @@ const TransactionItem = ({
       if (value && inputreview) {
         axios
           .post(
-            'https://k4d107.p.ssafy.io/haggle-credit/review/writing',
+            'http://www.mhk154.shop/haggle-credit/review/writing',
             body,
             {
               headers: {

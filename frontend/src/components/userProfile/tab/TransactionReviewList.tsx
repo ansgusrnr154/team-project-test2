@@ -55,7 +55,7 @@ const TransactionReviewList = ({ userData }: TransactionReviewListProps) => {
   useEffect(() => {
     axios
       .get(
-        `https://k4d107.p.ssafy.io/haggle-credit/review/mystore?page=1&uNo=${userData.uNo}`
+        `http://www.mhk154.shop/haggle-credit/review/mystore?page=1&uNo=${userData.uNo}`
       )
       .then((res) => {
         setMyReviewList(res.data);
@@ -65,7 +65,7 @@ const TransactionReviewList = ({ userData }: TransactionReviewListProps) => {
       });
     axios
       .get(
-        `https://k4d107.p.ssafy.io/haggle-credit/review/myWritten?page=1&uNo=${userData.uNo}`
+        `http://www.mhk154.shop/haggle-credit/review/myWritten?page=1&uNo=${userData.uNo}`
       )
       .then((res) => {
         setMyWrittenList(res.data);

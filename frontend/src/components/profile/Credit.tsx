@@ -71,7 +71,7 @@ const Credit = ({ userData }: CreditProps) => {
   useEffect(() => {
     axios
       .get(
-        `https://k4d107.p.ssafy.io/haggle-credit/user/mycredit?uNo=${userData.uNo}`
+        `http://www.mhk154.shop/haggle-credit/user/mycredit?uNo=${userData.uNo}`
       )
       .then((res) => {
         setCredit(

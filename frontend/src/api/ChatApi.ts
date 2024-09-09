@@ -2,7 +2,7 @@ import axios from "axios";
 import moment from 'moment';
 
 export function callApiRoomInfo(crNo: string) {
-  const url: string = `https://k4d107.p.ssafy.io/haggle-credit/chat/roominfo?crNo=${crNo}`;
+  const url: string = `http://www.mhk154.shop:8081/haggle-credit/chat/roominfo?crNo=${crNo}`;
   return axios
     .get(url)
     .then((Resoponse) => {
@@ -15,7 +15,7 @@ export function callApiRoomInfo(crNo: string) {
 }
 
 export function callApiRoomList(uNo: string) {
-  const url: string = `https://k4d107.p.ssafy.io/haggle-credit/chat/roomlist?uNo=${uNo}`;
+  const url: string = `http://www.mhk154.shop:8081/haggle-credit/chat/roomlist?uNo=${uNo}`;
   return axios
     .get(url)
     .then((Resoponse) => {
@@ -28,7 +28,7 @@ export function callApiRoomList(uNo: string) {
 }
 
 export function callApiChat(crNo: string) {
-  const url: string = `https://k4d107.p.ssafy.io/haggle-credit/chat/enter?crNo=${crNo}`;
+  const url: string = `http://www.mhk154.shop:8081/haggle-credit/chat/enter?crNo=${crNo}`;
   return axios
     .get(url)
     .then((Response) => {
@@ -52,7 +52,7 @@ interface CONNECTBODY {
 }
 
 export function callConnetChat(body: CONNECTBODY) {
-  const url: string = `https://k4d107.p.ssafy.io/haggle-credit/chat/connect`;
+  const url: string = `http://www.mhk154.shop:8081/haggle-credit/chat/connect`;
   return axios
     .post(url, body, {
       headers: {
@@ -69,7 +69,7 @@ export function callConnetChat(body: CONNECTBODY) {
 }
 
 export function callApiDeleteRoom(crNo: number) {
-  const url: string = `https://k4d107.p.ssafy.io/haggle-credit/chat/delete?crNo=${crNo}`;
+  const url: string = `http://www.mhk154.shop:8081/haggle-credit/chat/delete?crNo=${crNo}`;
   return axios
     .delete(url)
     .then((Resoponse) => {

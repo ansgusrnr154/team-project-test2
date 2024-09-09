@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export function callApiUpdateDonation() {
-  const url: string = `https://k4d107.p.ssafy.io/haggle-credit/itemSell/updatedonation`;
+  const url: string = `http://www.mhk154.shop:8081/haggle-credit/itemSell/updatedonation`;
   return axios
     .put(url, {
       headers: {
@@ -17,7 +17,7 @@ export function callApiUpdateDonation() {
 }
 
 export function callApiDonationList() {
-  const url: string = `https://k4d107.p.ssafy.io/haggle-credit/itemdonation/selectall`;
+  const url: string = `http://www.mhk154.shop:8081/haggle-credit/itemdonation/selectall`;
   return axios
     .get(url)
     .then((Response) => {
@@ -30,7 +30,7 @@ export function callApiDonationList() {
 }
 
 export function callApiDonationTotal() {
-  const url: string = `https://k4d107.p.ssafy.io/haggle-credit/itemdonation/selectalldonation`;
+  const url: string = `http://www.mhk154.shop:8081/haggle-credit/itemdonation/selectalldonation`;
   return axios
     .get(url)
     .then((Response) => {
@@ -42,7 +42,7 @@ export function callApiDonationTotal() {
 }
 
 export function callApiParticipantDonation(iNo: number, uNo: number, uaNo: number) {
-  const url: string = `https://k4d107.p.ssafy.io/haggle-credit/itemdonation/participant?bid=100&iNo=${iNo}&uNo=${uNo}&uaNo=${uaNo}`;
+  const url: string = `http://www.mhk154.shop:8081/haggle-credit/itemdonation/participant?bid=100&iNo=${iNo}&uNo=${uNo}&uaNo=${uaNo}`;
   return axios
     .get(url)
     .then((Response) => {
@@ -54,7 +54,7 @@ export function callApiParticipantDonation(iNo: number, uNo: number, uaNo: numbe
 }
 
 export function callApiDetailDonation(iNo: number) {
-  const url: string = `https://k4d107.p.ssafy.io/haggle-credit/itemdonation/selectone?iNo=${iNo}`;
+  const url: string = `http://www.mhk154.shop:8081/haggle-credit/itemdonation/selectone?iNo=${iNo}`;
   return axios
     .get(url)
     .then((Response) => {

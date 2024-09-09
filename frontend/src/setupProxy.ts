@@ -2,5 +2,5 @@ import express from 'express';
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
-app.use('/haggle-credit', createProxyMiddleware({ target: 'https://k4d107.p.ssafy.io:', changeOrigin: true }));
+app.use('/haggle-credit', createProxyMiddleware({ target: 'http://www.mhk154.shop:', changeOrigin: true }));
 app.listen(3006);

@@ -44,7 +44,7 @@ const TenderListTab = ({ userData }: TenderListTabProps) => {
   useEffect(() => {
     axios
       .get(
-        `https://k4d107.p.ssafy.io/haggle-credit/profile/breakdown/bid?uNo=${userData.uNo}`
+        `http://www.mhk154.shop/haggle-credit/profile/breakdown/bid?uNo=${userData.uNo}`
       )
       .then((res) => {
 
@@ -55,7 +55,7 @@ const TenderListTab = ({ userData }: TenderListTabProps) => {
       });
     axios
       .get(
-        `https://k4d107.p.ssafy.io/haggle-credit/profile/breakdown/bidbuy?uNo=${userData.uNo}`
+        `http://www.mhk154.shop/haggle-credit/profile/breakdown/bidbuy?uNo=${userData.uNo}`
       )
       .then((res) => {
 

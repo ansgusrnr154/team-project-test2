@@ -149,7 +149,7 @@ const ItemBuy = () => {
       body.ibDealAddress
     ) {
       axios
-        .post('https://k4d107.p.ssafy.io/haggle-credit/itemBuy/regist', body, {
+        .post('http://www.mhk154.shop/haggle-credit/itemBuy/regist', body, {
           headers: {
             'Content-Type': 'application/json',
           },
@@ -178,7 +178,7 @@ const ItemBuy = () => {
           formd.append('check', 'true');
           axios
             .post(
-              'https://k4d107.p.ssafy.io/haggle-credit/image/itemPhotoUpload',
+              'http://www.mhk154.shop/haggle-credit/image/itemPhotoUpload',
               formd,
               {
                 headers: {
@@ -202,7 +202,7 @@ const ItemBuy = () => {
 
       axios
         .post(
-          'https://k4d107.p.ssafy.io/haggle-credit/image/itemPhotoUpload',
+          'http://www.mhk154.shop/haggle-credit/image/itemPhotoUpload',
           formd,
           {
             headers: {
